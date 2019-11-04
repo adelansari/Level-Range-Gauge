@@ -41,3 +41,43 @@ Including the efficiency of detector through error propagation:
 <img src="Images/04.PNG">
 </p>
 
+# Examples:
+
+<p align="center"> 
+<img src="Images/010.png">
+</p>
+
+<p align="center"> 
+<img src="Images/011.png">
+</p>
+
+<p align="center"> 
+<img src="Images/012.png">
+</p>
+
+# Results:
+
+The code was used to get results for the tank width of 60,80 and 100 cm and a water level of 70,75,80,85 and 90 cm. The total number of runs performed per results was 1 million iterations.
+
+**Scatter map**
+Example: width 80, water level 85
+
+<p align="center"> 
+<img src="Images/06.png">
+</p>
+
+**Heat map**
+Example: width 80, water level 85
+
+<p align="center"> 
+<img src="Images/05.png">
+</p>
+
+The data was analyzed and the trend was turned into the following graph:
+
+<p align="center"> 
+<img src="Images/07.png">
+</p>
+
+As we could see from the data, we would recommend a tank width of 60 as it is the most sensitive to changes and allows has a more constant increasing response for most of the water level range. With the note that a tank width of 100 would have the least counts due to direct and air interactions, and hence have a more contribution from the water scattered but the range of solid angle that reaches the water also decreases
+The reason for the change this trend is as the water level increase above a certain level that depends on the width, the water absorption starts to take effect and the neutrons that have an interaction in water deep water has a lower probability of reaching the detector. As the width of the tank increases the counts decrease as the angle range that leads to a direct detector count decreases. For every width there is a certain minimum water level below which the neutrons don’t interact with the water.
