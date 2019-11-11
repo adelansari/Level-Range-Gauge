@@ -12,7 +12,7 @@ A nuclear level gauge basically includes following components:
 In this project, the proposed design used for detection setup is as follow:
 
 <p align="center"> 
-<img src="Images/01.png">
+<img src="Images/01.png"| width=400>
 </p>
 
 The tank has rectangular shape with dimensions x= variable, y=200 cm and z= 200 cm. The source that was used is Cs-137 (it can vary depending on the type of material in the tank). This source was specifically chosen as it has single peak it its spectrum. The collimated source with dispersion angle of 30o is placed in: x=0, y=100 cm and z=100 cm. The detector has the following dimensions: x= 3 cm, y=20 cm and is placed between 100 and 120. Detector top center coordinates are specified as: x=tank width, y=110 cm and z= 100 cm. There are two mediums in the tank: Water and Air considering the water level to be variable.
@@ -26,33 +26,33 @@ If the emitted particle exits the tank, there will be no count. In case of the p
 # Algorithm
 
 <p align="center"> 
-<img src="Images/02.png">
+<img src="Images/02.png"| width=700>
 </p>
 
 Standard deviation analysis (Error analysis) was performed, the final equation was derived using the following:
 
 <p align="center"> 
-<img src="Images/03.PNG">
+<img src="Images/03.PNG"| width=400>
 </p>
 
 Including the efficiency of detector through error propagation:
 
 <p align="center"> 
-<img src="Images/04.PNG">
+<img src="Images/04.PNG"| width=500>
 </p>
 
 # Examples:
 
 <p align="center"> 
-<img src="Images/010.png">
+<img src="Images/010.png"| width=500>
 </p>
 
 <p align="center"> 
-<img src="Images/011.png">
+<img src="Images/011.png"| width=500>
 </p>
 
 <p align="center"> 
-<img src="Images/012.png">
+<img src="Images/012.png"| width=500>
 </p>
 
 # Results:
@@ -76,7 +76,7 @@ Example: width 80, water level 85
 The data was analyzed and the trend was turned into the following graph:
 
 <p align="center"> 
-<img src="Images/07.png">
+<img src="Images/07.png"| width=600>
 </p>
 
 As we could see from the data, we would recommend a tank width of 60 as it is the most sensitive to changes and allows has a more constant increasing response for most of the water level range. With the note that a tank width of 100 would have the least counts due to direct and air interactions, and hence have a more contribution from the water scattered but the range of solid angle that reaches the water also decreases
