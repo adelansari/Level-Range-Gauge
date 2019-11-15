@@ -18,9 +18,10 @@ In this project, the proposed design used for detection setup is as follow:
 The tank has rectangular shape with dimensions x= variable, y=200 cm and z= 200 cm. The source that was used is Cs-137 (it can vary depending on the type of material in the tank). This source was specifically chosen as it has single peak it its spectrum. The collimated source with dispersion angle of 30o is placed in: x=0, y=100 cm and z=100 cm. The detector has the following dimensions: x= 3 cm, y=20 cm and is placed between 100 and 120. Detector top center coordinates are specified as: x=tank width, y=110 cm and z= 100 cm. There are two mediums in the tank: Water and Air considering the water level to be variable.
 
 The objective of using Monte Carlo (MC) simulation technique in this project is to study gamma ray emission and interaction in two dimension in the mediums inside the tank. Level gauging depends on the detector response. As the water level rises and approach the detector height, the number of particles reaching the detector will decrease and hence it gives an indication that water needs to be stopped from rising. MC helps to generate random numbers by first showing the emission angle in the random set, theta= cos(1-2*rand)^-1. We can then determine the position of interaction using x= -1/mu_air * ln(rand). It then determines the interaction medium and anticipate different type of gamma interactions such as: Compton scattering, photo electric effect and pair production. In case of Compton scattering, the following things will be calculated:
-•	The scattering angle
-•	The new energy
-•	The new attenuation coefficient
+- The scattering angle
+- The new energy
+- The new attenuation coefficient
+
 If the emitted particle exits the tank, there will be no count. In case of the particle interacting with the detector, the MC code will count for the detector efficiency and counts the detected particle. Usually the particles emitted directly to the detector will be counted.
 
 # Algorithm
